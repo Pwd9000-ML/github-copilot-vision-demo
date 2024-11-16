@@ -1,0 +1,24 @@
+# 0 - Introduction (M+G)
+
+# 1 - Create secured web app in Azure + Identity + Access to SQL via Managed Identity (M)
+
+@azure Can you help me to deploy simple web app in Azure using az CLI inside a resource group called "github-copilot-web-apps" and the web app called "pwd9000webappdemo01"?
+
+# 2 - Deployment of secure web app (M)
+
+# 3 - Interaction with resources in deployment (M)
+
+@azure /resources Does the web app hosted in Resource Group "github-copilot-web-apps" have an Identity assigned?
+@azure /resources What is the Principal ID for the Identity assigned to the web app hosted in Resource Group "github-copilot-web-apps"?
+@azure /resources Does the Identity assigned to the web app hosted in Resource Group "github-copilot-web-apps" have any sort of access anywhere?
+@azure /resources What about the SQL Server in Resource Group "github-copilot-web-apps"? Who is the AAD/ENTRAID Admin?
+
+# 4 - GitHub Copilot to create Python scripts (G)
+
+# 4 - Python script1 to interact with resources -> JSON (G)
+
+# 5 - Python script2 interpret JSON -> Visual (G)
+
+# 6 - GH Copilot to interpret JSON -> Visual (M)
+
+# 7 - Close (M+G)

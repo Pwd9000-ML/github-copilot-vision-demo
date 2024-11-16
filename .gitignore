@@ -3,6 +3,25 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+# Visual Studio Code
+.vscode/*
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.crash.log
+.terraform/
+.terraform.lock.hcl
+
 # User-specific files
 *.rsuser
 *.suo

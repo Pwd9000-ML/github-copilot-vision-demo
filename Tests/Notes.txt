@@ -1,0 +1,8 @@
+Tooling:
+- VS Code
+- AZ CLI + Extension
+- GitHub Copilot
+- Azure Account extension
+- GitHub Copilot for Azure extension
+* Configure extensions
+* Log in tenant and subscription

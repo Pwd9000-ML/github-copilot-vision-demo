@@ -1,6 +1,6 @@
-# 0 - Introduction (M+G)
+# 0 - Introduction (M+G) 7 min
 
-# 1 - Create secured web app in Azure + Identity + Access to SQL via Managed Identity (M)
+# 1 - Create secured web app in Azure + Identity + Access to SQL via Managed Identity (M) (8 min)
 
 @azure Can you help me to deploy simple web app in Azure using az CLI inside a resource group called "github-copilot-web-apps" and the web app called "pwd9000webappdemo01"?
 

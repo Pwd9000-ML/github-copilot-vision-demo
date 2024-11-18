@@ -1,8 +1,8 @@
 Tooling:
 - VSCode
-- AZ CLI (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) + VSCode Extension
-- GitHub Copilot VSCode
-- Azure Account extension VSCode
-- GitHub Copilot for Azure extension VSCode
+- AZ CLI (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) + Azure CLI Tools VSCode Extension
+- GitHub Copilot + Chat VSCode Extension
+- Azure Account VSCode Extension
+- GitHub Copilot for Azure VSCode Extension
 * Configure extensions
 * Log in tenant and subscription

@@ -4,5 +4,7 @@ Tooling:
 - GitHub Copilot + Chat VSCode Extension
 - Azure Account VSCode Extension
 - GitHub Copilot for Azure VSCode Extension
+- Python VSCode Extension
+- Jupyter VSCode Extension
 * Configure extensions
 * Log in tenant and subscription

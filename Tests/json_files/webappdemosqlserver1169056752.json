@@ -1,0 +1,16 @@
+{
+    "id": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps-demo/providers/Microsoft.Sql/servers/webappdemosqlserver1169056752",
+    "name": "webappdemosqlserver1169056752",
+    "type": "Microsoft.Sql/servers",
+    "location": "UK South",
+    "properties": {
+        "fullyQualifiedDomainName": "webappdemosqlserver1169056752.database.windows.net",
+        "administratorLogin": "CloudSA335223dd",
+        "administratorLoginPassword": null,
+        "externalAdministratorLogin": null,
+        "externalAdministratorSid": null,
+        "version": "12.0",
+        "state": "Ready"
+    },
+    "kind": "v12.0"
+}

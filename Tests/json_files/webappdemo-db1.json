@@ -1,0 +1,28 @@
+{
+    "id": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps-demo/providers/Microsoft.Sql/servers/webappdemosqlserver1169056752/databases/webappdemo-db1",
+    "name": "webappdemo-db1",
+    "type": "Microsoft.Sql/servers/databases",
+    "location": "UK South",
+    "properties": {
+        "databaseId": "afcb2e5d-e47e-4d8c-83b2-118faf3fd7b2",
+        "edition": "Standard",
+        "status": "Online",
+        "serviceLevelObjective": "S0",
+        "collation": "SQL_Latin1_General_CP1_CI_AS",
+        "maxSizeBytes": "268435456000",
+        "creationDate": "2024-11-16T15:53:46.12Z",
+        "currentServiceObjectiveId": "f1173c43-91bd-4aaa-973c-54e79e15235b",
+        "requestedServiceObjectiveId": "f1173c43-91bd-4aaa-973c-54e79e15235b",
+        "requestedServiceObjectiveName": "S0",
+        "sampleName": null,
+        "defaultSecondaryLocation": "UK West",
+        "earliestRestoreDate": "2024-11-19T20:45:33.5953115Z",
+        "elasticPoolName": null,
+        "containmentState": 2,
+        "readScale": "Disabled",
+        "failoverGroupId": null,
+        "zoneRedundant": false,
+        "isUpgradeRequested": false
+    },
+    "kind": "v12.0,user"
+}

@@ -44,6 +44,11 @@ az sql db create --resource-group $resourceGroupName --server $sqlServerName --n
 # Set a sql server firewall-rule to "AllowAzureServices" to access SQL server created
 az sql server firewall-rule create --resource-group $resourceGroupName --server $sqlServerName --name "AllowAzureServices" --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
 
-# Deploy the HTML file to the web app created
-az webapp deploy --resource-group $resourceGroupName --name $webAppName --src-url 'https://github.com/Pwd9000-ML/github-copilot-vision-demo/blob/master/Demo/myapp.zip' --type zip --timeout 1200
+# Link your Azure Web App to your GitHub repository
+az webapp deployment source config --name $webAppName --resource-group $resourceGroupName --repo-url 'https://github.com/Pwd9000-ML/github-copilot-vision-demo' --branch master
 
+# Specify the subdirectory where your files are located
+az webapp config appsettings set --name $webAppName --resource-group $resourceGroupName --settings 'PROJECT=Demo/myapp'
+
+# Enable the build during deployment (optional for static files):
+az webapp config appsettings set --name $webAppName --resource-group $resourceGroupName --settings 'SCM_DO_BUILD_DURING_DEPLOYMENT=true'

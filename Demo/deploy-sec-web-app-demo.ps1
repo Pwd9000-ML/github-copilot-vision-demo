@@ -46,3 +46,6 @@ az sql server firewall-rule create --resource-group $resourceGroupName --server 
 
 # Deploy the web app to Azure from zipped file
 az webapp deploy --name $webAppName --resource-group $resourceGroupName --src-path '.\demo\myapp.zip' --type zip
+
+# Enable build during deployment
+az webapp config appsettings set --name $webAppName --resource-group $resourceGroupName --settings 'SCM_DO_BUILD_DURING_DEPLOYMENT=true'

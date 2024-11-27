@@ -48,4 +48,4 @@ az sql server firewall-rule create --resource-group $resourceGroupName --server 
 az webapp deploy --name $webAppName --resource-group $resourceGroupName --src-path './myapp.zip'
 
 # Deploy the web app to Azure from zipped file
-az webapp deploy --name $webAppName --resource-group $resourceGroupName --src-path '.\demo\myapp.zip' --type zip
+az webapp deploy --name $webAppName --resource-group $resourceGroupName --src-path '.\Tests\myapp.zip' --type zip

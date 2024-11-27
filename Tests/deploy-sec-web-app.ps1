@@ -30,7 +30,7 @@ az storage container create --name $jsonContainerName --account-name $storageAcc
 az appservice plan create --name $appServicePlanName --resource-group $resourceGroupName --sku B3 --is-linux
 
 # Create Web App with Managed Identity using "NODE:20-lts" runtime with the App Service Plan and name declared variables
-az webapp create --name $webAppName --resource-group $resourceGroupName --plan $appServicePlanName --assign-identity --runtime 'NODE:20-lts'
+az webapp create --name $webAppName --resource-group $resourceGroupName --plan $appServicePlanName --assign-identity --runtime 'PHP:8.3'
 
 # Get the System Managed Identity for the web app to use as the SQL Server admin
 $webAppPrincipalId = (az webapp identity show --name $webAppName --resource-group $resourceGroupName --query principalId --output tsv)

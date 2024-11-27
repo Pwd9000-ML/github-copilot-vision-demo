@@ -45,7 +45,4 @@ az sql db create --resource-group $resourceGroupName --server $sqlServerName --n
 az sql server firewall-rule create --resource-group $resourceGroupName --server $sqlServerName --name "AllowAzureServices" --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
 
 # Deploy the web app to Azure from zipped file
-az webapp deploy --name $webAppName --resource-group $resourceGroupName --src-path './demo/myapp.zip' --type zip
-
-# Enable the build during deployment (optional for static files):
-#az webapp config appsettings set --name $webAppName --resource-group $resourceGroupName --settings 'SCM_DO_BUILD_DURING_DEPLOYMENT=true'
+az webapp deploy --name $webAppName --resource-group $resourceGroupName --src-path '.\demo\myapp.zip' --type zip

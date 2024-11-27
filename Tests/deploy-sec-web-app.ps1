@@ -27,7 +27,7 @@ $storageAccountKey = az storage account keys list --resource-group $resourceGrou
 az storage container create --name $jsonContainerName --account-name $storageAccountName --account-key $storageAccountKey
 
 # Create App Service Plan for the Web App
-az appservice plan create --name $appServicePlanName --resource-group $resourceGroupName --sku B3 --is-linux
+az appservice plan create --name $appServicePlanName --resource-group $resourceGroupName --sku B2 --is-linux
 
 # Create Web App with Managed Identity using "NODE:20-lts" runtime with the App Service Plan and name declared variables
 az webapp create --name $webAppName --resource-group $resourceGroupName --plan $appServicePlanName --assign-identity --runtime 'NODE:20-lts'

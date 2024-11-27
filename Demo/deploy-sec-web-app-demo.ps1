@@ -30,7 +30,7 @@ az storage container create --name $jsonContainerName --account-name $storageAcc
 az appservice plan create --name $appServicePlanName --resource-group $resourceGroupName --sku B3 --is-linux
 
 # Create Web App with Managed Identity using "NODE:20-lts" runtime with the App Service Plan and name declared variables
-az webapp create --name $webAppName --resource-group $resourceGroupName --plan $appServicePlanName --assign-identity --runtime "NODE:20-lts"
+az webapp create --name $webAppName --resource-group $resourceGroupName --plan $appServicePlanName --assign-identity --runtime "NODE|20-lts"
 
 # Get the System Managed Identity for the web app to use as the SQL Server admin
 $webAppPrincipalId = (az webapp identity show --name $webAppName --resource-group $resourceGroupName --query principalId --output tsv)
@@ -48,7 +48,7 @@ az sql server firewall-rule create --resource-group $resourceGroupName --server 
 az webapp deployment source config --name $webAppName --resource-group $resourceGroupName --repo-url 'https://github.com/Pwd9000-ML/github-copilot-vision-demo' --branch master
 
 # Specify the subdirectory where your files are located
-az webapp config appsettings set --name $webAppName --resource-group $resourceGroupName --settings 'PROJECT=Demo/myapp'
+az webapp config appsettings set --name $webAppName --resource-group $resourceGroupName --settings 'PROJECT=demo/myapp'
 
 # Enable the build during deployment (optional for static files):
 az webapp config appsettings set --name $webAppName --resource-group $resourceGroupName --settings 'SCM_DO_BUILD_DURING_DEPLOYMENT=true'

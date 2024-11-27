@@ -3,16 +3,16 @@
 
 # Declare variables for the deployment powershell script
 #$resourceGroupName = "github-copilot-web-apps" ### (Fail back demo)
-#$demoNumber = "535774434" ### (Fail back demo)
+#$demoNumber = "13577" ### (Fail back demo)
 $resourceGroupName = "github-copilot-web-apps-demo"
-$demoNumber = "1169056752"
+$demoNumber = "23577"
 $location = "uksouth"
 $jsonContainerName = "webapp-resources-json"
 $storageAccountName = "webappdemo$demoNumber"
-$appServicePlanName = "webappdemo-plan-1"
-$webAppName = "pwd900webappdemo1"
+$appServicePlanName = "webappdemo-plan-$demoNumber"
+$webAppName = "pwd900webappdemo$demoNumber"
 $sqlServerName = "webappdemosqlserver$demoNumber"
-$sqlDatabaseName = "webappdemo-db1"
+$sqlDatabaseName = "webappdemo-db$demoNumber"
 
 # Create Resource Group for the deployment based on the declared variables
 az group create --name $resourceGroupName --location $location

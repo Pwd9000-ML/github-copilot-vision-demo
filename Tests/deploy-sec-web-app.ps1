@@ -1,11 +1,11 @@
 # Log in to Azure
 # az login --tenant 'b4fd7cff-510b-4da5-b133-f7aa6f692ee2'
 
-# Declare variables for the deployment powershell script
-#$resourceGroupName = "github-copilot-web-apps" ### (Fail back demo)
-#$demoNumber = "13577" ### (Fail back demo)
-$resourceGroupName = "github-copilot-web-apps-demo"
-$demoNumber = "23577"
+# Declare variables for all the resources that will be deployed with Azure CLI using powershell
+$resourceGroupName = "github-copilot-web-apps" ### (Fail back demo)
+$demoNumber = "13577" ### (Fail back demo)
+#$resourceGroupName = "github-copilot-web-apps-demo"
+#$demoNumber = "23577"
 $location = "uksouth"
 $jsonContainerName = "webapp-resources-json"
 $storageAccountName = "webappdemo$demoNumber"
@@ -14,16 +14,16 @@ $webAppName = "pwd900webappdemo$demoNumber"
 $sqlServerName = "webappdemosqlserver$demoNumber"
 $sqlDatabaseName = "webappdemo-db$demoNumber"
 
-# Create Resource Group for the deployment based on the declared variables
+# Create Resource Group in Azure to place all the resources in
 az group create --name $resourceGroupName --location $location
 
-# Create a blob storage account to store JSON files from the web app deployment
+# Create a blob storage account in the resource group
 az storage account create --name $storageAccountName --resource-group $resourceGroupName --location $location --sku Standard_LRS
 
-# Retrieve the storage account key
+# Retrieve the storage account key to use for creating a container
 $storageAccountKey = az storage account keys list --resource-group $resourceGroupName --account-name $storageAccountName --query "[0].value" --output tsv
 
-# create a container called "WebApp-resources-JSON" in the storage account to store the JSON files
+# Create a container called "WebApp-resources-JSON" in the storage account to store the JSON files
 az storage container create --name $jsonContainerName --account-name $storageAccountName --account-key $storageAccountKey
 
 # Create App Service Plan for the Web App
@@ -44,22 +44,5 @@ az sql db create --resource-group $resourceGroupName --server $sqlServerName --n
 # Set a sql server firewall-rule to "AllowAzureServices" to access SQL server created
 az sql server firewall-rule create --resource-group $resourceGroupName --server $sqlServerName --name "AllowAzureServices" --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
 
-# Create a simple HTML file to use as the content for the web app
-$htmlContent = @"
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Azure Web App</title>
-</head>
-<body>
-    <h1>Hello, Azure!</h1>
-</body>
-</html>
-"@
-
-# Save the HTML to a file named "index.html"
-$htmlFile = "index.html"
-$htmlContent | Out-File -FilePath $htmlFile
-
 # Deploy the HTML file to the web app created
-az webapp deploy source config-zip --name $webAppName --resource-group $resourceGroupName --src $htmlFile
+az webapp deployment source config-zip --resource-group $resourceGroupName --name $webAppName --src './myapp.zip'

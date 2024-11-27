@@ -9,10 +9,10 @@ $demoNumber = "1169056752"
 $location = "uksouth"
 $jsonContainerName = "webapp-resources-json"
 $storageAccountName = "webappdemo$demoNumber"
-$appServicePlanName = "webappdemo-plan"
-$webAppName = "pwd900webappdemo"
+$appServicePlanName = "webappdemo-plan-1"
+$webAppName = "pwd900webappdemo1"
 $sqlServerName = "webappdemosqlserver$demoNumber"
-$sqlDatabaseName = "webappdemo-db"
+$sqlDatabaseName = "webappdemo-db1"
 
 # Create Resource Group for the deployment based on the declared variables
 az group create --name $resourceGroupName --location $location

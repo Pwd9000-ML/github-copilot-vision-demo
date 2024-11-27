@@ -3,6 +3,7 @@
 
 # Declare variables for the deployment powershell script
 #$resourceGroupName = "github-copilot-web-apps" ### (Fail back demo)
+#$demoNumber = "535774434" ### (Fail back demo)
 $resourceGroupName = "github-copilot-web-apps-demo"
 $demoNumber = "1169056752"
 $location = "uksouth"

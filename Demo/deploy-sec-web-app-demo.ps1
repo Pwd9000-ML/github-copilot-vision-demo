@@ -45,5 +45,4 @@ az sql db create --resource-group $resourceGroupName --server $sqlServerName --n
 az sql server firewall-rule create --resource-group $resourceGroupName --server $sqlServerName --name "AllowAzureServices" --start-ip-address 0.0.0.0 --end-ip-address 0.0.0.0
 
 # Deploy the HTML file to the web app created
-#az webapp deployment source config-zip --resource-group $resourceGroupName --name $webAppName --src './myapp.zip'
-az webapp deploy --resource-group $resourceGroupName --name $webAppName --src-url 
+az webapp deploy --resource-group $resourceGroupName --name $webAppName --src-url 'https://github.com/Pwd9000-ML/github-copilot-vision-demo/blob/master/Demo/myapp.zip' --type zip

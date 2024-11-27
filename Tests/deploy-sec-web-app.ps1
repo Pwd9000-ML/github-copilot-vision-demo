@@ -1,16 +1,29 @@
 # Log in to Azure
-#az login --tenant 'b4fd7cff-510b-4da5-b133-f7aa6f692ee2'
+# az login --tenant 'b4fd7cff-510b-4da5-b133-f7aa6f692ee2'
 
 # Declare variables for the deployment powershell script
-$resourceGroupName = "github-copilot-web-apps"
+#$resourceGroupName = "github-copilot-web-apps" ### (Fail back demo)
+$resourceGroupName = "github-copilot-web-apps-demo"
+$demoNumber = "1169056752"
 $location = "uksouth"
+$jsonContainerName = "webapp-resources-json"
+$storageAccountName = "webappdemo#$demoNumber"
 $appServicePlanName = "webappdemo-plan"
 $webAppName = "pwd900webappdemo"
-$sqlServerName = "webappdemosqlserver$(Get-Random)"
+$sqlServerName = "webappdemosqlserver$demoNumber"
 $sqlDatabaseName = "webappdemo-db"
 
 # Create Resource Group for the deployment based on the declared variables
 az group create --name $resourceGroupName --location $location
+
+# Create a blob storage account to store JSON files from the web app deployment
+az storage account create --name $storageAccountName --resource-group $resourceGroupName --location $location --sku Standard_LRS
+
+# Retrieve the storage account key
+$storageAccountKey = az storage account keys list --resource-group $resourceGroupName --account-name $storageAccountName --query "[0].value" --output tsv
+
+# create a container called "WebApp-resources-JSON" in the storage account to store the JSON files
+az storage container create --name $jsonContainerName --account-name $storageAccountName --account-key $storageAccountKey
 
 # Create App Service Plan for the Web App
 az appservice plan create --name $appServicePlanName --resource-group $resourceGroupName --sku B1 --is-linux

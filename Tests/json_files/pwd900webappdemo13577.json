@@ -1,17 +1,17 @@
 {
-    "id": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps-demo/providers/Microsoft.Web/sites/pwd900webappdemo1",
-    "name": "pwd900webappdemo1",
+    "id": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps/providers/Microsoft.Web/sites/pwd900webappdemo13577",
+    "name": "pwd900webappdemo13577",
     "type": "Microsoft.Web/sites",
     "location": "UK South",
     "properties": {
-        "name": "pwd900webappdemo1",
+        "name": "pwd900webappdemo13577",
         "state": "Running",
         "hostNames": [
-            "pwd900webappdemo1.azurewebsites.net"
+            "pwd900webappdemo13577.azurewebsites.net"
         ],
-        "webSpace": "github-copilot-web-apps-demo-UKSouthwebspace-Linux",
-        "selfLink": "https://waws-prod-ln1-127.api.azurewebsites.windows.net:454/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/webspaces/github-copilot-web-apps-demo-UKSouthwebspace-Linux/sites/pwd900webappdemo1",
-        "repositorySiteName": "pwd900webappdemo1",
+        "webSpace": "github-copilot-web-apps-UKSouthwebspace-Linux",
+        "selfLink": "https://waws-prod-ln1-157.api.azurewebsites.windows.net:454/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/webspaces/github-copilot-web-apps-UKSouthwebspace-Linux/sites/pwd900webappdemo13577",
+        "repositorySiteName": "pwd900webappdemo13577",
         "owner": null,
         "usageState": "Normal",
         "enabled": true,
@@ -19,8 +19,8 @@
         "siteScopedCertificatesEnabled": false,
         "afdEnabled": false,
         "enabledHostNames": [
-            "pwd900webappdemo1.azurewebsites.net",
-            "pwd900webappdemo1.scm.azurewebsites.net"
+            "pwd900webappdemo13577.azurewebsites.net",
+            "pwd900webappdemo13577.scm.azurewebsites.net"
         ],
         "siteProperties": {
             "metadata": null,
@@ -43,7 +43,7 @@
         "siteMode": null,
         "hostNameSslStates": [
             {
-                "name": "pwd900webappdemo1.azurewebsites.net",
+                "name": "pwd900webappdemo13577.azurewebsites.net",
                 "sslState": "Disabled",
                 "ipBasedSslResult": null,
                 "virtualIP": null,
@@ -56,7 +56,7 @@
                 "hostType": "Standard"
             },
             {
-                "name": "pwd900webappdemo1.scm.azurewebsites.net",
+                "name": "pwd900webappdemo13577.scm.azurewebsites.net",
                 "sslState": "Disabled",
                 "ipBasedSslResult": null,
                 "virtualIP": null,
@@ -71,11 +71,11 @@
         ],
         "computeMode": null,
         "serverFarm": null,
-        "serverFarmId": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps-demo/providers/Microsoft.Web/serverfarms/webappdemo-plan-1",
+        "serverFarmId": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps/providers/Microsoft.Web/serverfarms/webappdemo-plan-13577",
         "reserved": true,
         "isXenon": false,
         "hyperV": false,
-        "lastModifiedTimeUtc": "2024-11-16T15:51:37.7666667",
+        "lastModifiedTimeUtc": "2024-11-27T21:35:53.1666667",
         "storageRecoveryDefaultState": "Running",
         "contentAvailabilityState": "Normal",
         "runtimeAvailabilityState": "Normal",
@@ -181,7 +181,7 @@
         },
         "functionAppConfig": null,
         "daprConfig": null,
-        "deploymentId": "pwd900webappdemo1",
+        "deploymentId": "pwd900webappdemo13577",
         "slotName": null,
         "trafficManagerHostNames": null,
         "sku": "Basic",
@@ -204,24 +204,24 @@
         "managedEnvironmentId": null,
         "workloadProfileName": null,
         "resourceConfig": null,
-        "inboundIpAddress": "20.90.134.31",
-        "possibleInboundIpAddresses": "20.90.134.31",
-        "ftpUsername": "pwd900webappdemo1\\$pwd900webappdemo1",
-        "ftpsHostName": "ftps://waws-prod-ln1-127.ftp.azurewebsites.windows.net/site/wwwroot",
-        "outboundIpAddresses": "51.11.47.121,51.11.47.178,51.132.168.104,51.132.169.245,51.132.170.120,51.132.171.18,20.90.192.143,20.108.107.17,20.26.137.101,20.26.138.141,20.26.138.187,20.26.138.243,20.90.134.31",
-        "possibleOutboundIpAddresses": "51.11.47.121,51.11.47.178,51.132.168.104,51.132.169.245,51.132.170.120,51.132.171.18,20.90.192.143,20.108.107.17,20.26.137.101,20.26.138.141,20.26.138.187,20.26.138.243,20.26.139.127,20.108.198.120,20.26.139.170,20.26.140.72,20.26.140.151,20.26.140.165,20.26.140.167,20.26.140.197,20.26.141.240,20.26.142.113,20.26.142.183,20.26.142.189,20.26.143.82,20.26.143.110,20.26.143.136,20.26.143.179,4.234.40.78,4.234.40.171,20.90.134.31",
+        "inboundIpAddress": "20.90.133.0",
+        "possibleInboundIpAddresses": "20.90.133.0",
+        "ftpUsername": "pwd900webappdemo13577\\$pwd900webappdemo13577",
+        "ftpsHostName": "ftps://waws-prod-ln1-157.ftp.azurewebsites.windows.net/site/wwwroot",
+        "outboundIpAddresses": "85.210.72.243,4.158.91.189,85.210.16.175,52.151.106.227,85.210.50.255,4.158.112.157,85.210.89.0,52.151.106.68,52.151.106.89,4.158.33.95,20.162.131.212,4.158.137.76,20.90.133.0",
+        "possibleOutboundIpAddresses": "85.210.72.243,4.158.91.189,85.210.16.175,52.151.106.227,85.210.50.255,4.158.112.157,85.210.89.0,52.151.106.68,52.151.106.89,4.158.33.95,20.162.131.212,4.158.137.76,52.151.104.201,4.158.73.85,4.158.91.164,4.158.80.20,51.142.216.244,172.166.95.99,4.158.234.106,4.158.73.169,4.158.37.174,4.158.73.237,4.159.0.70,4.234.26.14,51.142.217.200,172.166.95.184,4.158.70.89,4.158.24.135,4.158.108.81,4.234.27.138,20.90.133.0",
         "containerSize": 0,
         "dailyMemoryTimeQuota": 0,
         "suspendedTill": null,
         "siteDisabledReason": 0,
         "functionExecutionUnitsCache": null,
         "maxNumberOfWorkers": null,
-        "homeStamp": "waws-prod-ln1-127",
+        "homeStamp": "waws-prod-ln1-157",
         "cloningInfo": null,
         "hostingEnvironmentId": null,
         "tags": null,
-        "resourceGroup": "github-copilot-web-apps-demo",
-        "defaultHostName": "pwd900webappdemo1.azurewebsites.net",
+        "resourceGroup": "github-copilot-web-apps",
+        "defaultHostName": "pwd900webappdemo13577.azurewebsites.net",
         "slotSwapStatus": null,
         "httpsOnly": false,
         "endToEndEncryptionEnabled": false,
@@ -248,7 +248,7 @@
     },
     "kind": "app,linux",
     "identity": {
-        "principal_id": "191a1bb9-b930-479b-8ad6-6348ff877c80",
+        "principal_id": "02ec2304-2c07-442c-8c9d-d0763e0c3685",
         "tenant_id": "b4fd7cff-510b-4da5-b133-f7aa6f692ee2",
         "type": "SystemAssigned"
     }

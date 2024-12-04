@@ -1,0 +1,58 @@
+{
+    "id": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps/providers/Microsoft.Storage/storageAccounts/webappdemo13577",
+    "name": "webappdemo13577",
+    "type": "Microsoft.Storage/storageAccounts",
+    "location": "uksouth",
+    "tags": {},
+    "properties": {
+        "keyCreationTime": {
+            "key1": "2024-11-27T21:15:14.8418353Z",
+            "key2": "2024-11-27T21:15:14.8418353Z"
+        },
+        "allowCrossTenantReplication": false,
+        "privateEndpointConnections": [],
+        "minimumTlsVersion": "TLS1_0",
+        "allowBlobPublicAccess": false,
+        "networkAcls": {
+            "ipv6Rules": [],
+            "bypass": "AzureServices",
+            "virtualNetworkRules": [],
+            "ipRules": [],
+            "defaultAction": "Allow"
+        },
+        "supportsHttpsTrafficOnly": true,
+        "encryption": {
+            "services": {
+                "file": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-11-27T21:15:14.8574615Z"
+                },
+                "blob": {
+                    "keyType": "Account",
+                    "enabled": true,
+                    "lastEnabledTime": "2024-11-27T21:15:14.8574615Z"
+                }
+            },
+            "keySource": "Microsoft.Storage"
+        },
+        "accessTier": "Hot",
+        "provisioningState": "Succeeded",
+        "creationTime": "2024-11-27T21:15:14.7167348Z",
+        "primaryEndpoints": {
+            "dfs": "https://webappdemo13577.dfs.core.windows.net/",
+            "web": "https://webappdemo13577.z33.web.core.windows.net/",
+            "blob": "https://webappdemo13577.blob.core.windows.net/",
+            "queue": "https://webappdemo13577.queue.core.windows.net/",
+            "table": "https://webappdemo13577.table.core.windows.net/",
+            "file": "https://webappdemo13577.file.core.windows.net/"
+        },
+        "primaryLocation": "uksouth",
+        "statusOfPrimary": "available"
+    },
+    "kind": "StorageV2",
+    "sku": {
+        "name": "Standard_LRS",
+        "tier": "Standard"
+    }
+}

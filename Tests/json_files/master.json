@@ -1,16 +1,16 @@
 {
-    "id": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps-demo/providers/Microsoft.Sql/servers/webappdemosqlserver1169056752/databases/master",
+    "id": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps/providers/Microsoft.Sql/servers/webappdemosqlserver13577/databases/master",
     "name": "master",
     "type": "Microsoft.Sql/servers/databases",
     "location": "UK South",
     "properties": {
-        "databaseId": "b5b67e3b-7a80-4d40-9dbf-76f24b6f9416",
+        "databaseId": "6f55fcb6-4e6f-4deb-a866-72d554f12783",
         "edition": "System",
         "status": "Online",
         "serviceLevelObjective": "System0",
         "collation": "SQL_Latin1_General_CP1_CI_AS",
         "maxSizeBytes": "53687091200",
-        "creationDate": "2024-11-16T15:52:41.67Z",
+        "creationDate": "2024-11-27T21:17:00.533Z",
         "currentServiceObjectiveId": "29dd7459-4a7c-4e56-be22-f0adda49440d",
         "requestedServiceObjectiveId": "29dd7459-4a7c-4e56-be22-f0adda49440d",
         "requestedServiceObjectiveName": "System0",
@@ -25,5 +25,5 @@
         "isUpgradeRequested": false
     },
     "kind": "v12.0,system",
-    "managed_by": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps-demo/providers/Microsoft.Sql/servers/webappdemosqlserver1169056752"
+    "managed_by": "/subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps/providers/Microsoft.Sql/servers/webappdemosqlserver13577"
 }

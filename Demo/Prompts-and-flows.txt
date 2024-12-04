@@ -57,6 +57,10 @@ Include comments to explain each step of the script."
 # 4 - GitHub Copilot to create Python Jupiter Notebook to connect to Azure + configure + get JSON objects on local folder (and storage blob as JSON file) + and analyse JSON objects + generate mermaid using AI (G) 17 min
 
 # 5 - GH Copilot to interpret JSON file from storage -> Mermaid Visual (M) 5 min
+ 
+create a sequence diagram based on the files in folder Tests/json_files
+can you create ERD diagram based on file deploy-sec-web-app.ps1
+use deploy-sec-web-app.ps1 to generate ERD diagram, by adding information from json files from folder Tests/json_files
 
 # 6 - Close (M+G) (5 min)
 

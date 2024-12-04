@@ -61,6 +61,8 @@ Include comments to explain each step of the script."
 create a sequence diagram based on the files in folder Tests/json_files
 can you create ERD diagram based on file deploy-sec-web-app.ps1
 use deploy-sec-web-app.ps1 to generate ERD diagram, by adding information from json files from folder Tests/json_files
+@mermAId  use  deploy-sec-web-app.ps1 to generate ERD diagram, by adding information from json files from folder Tests/json_files, the "id" key in each json file contains the value with the resource id, for example: "id": "/subscriptions/xxxxx/resourceGroups/xxxxxx/providers/xxxxx/xxx/name", only use the id value and construct the diagram based on the resource ids and powershell script 
+
 
 # 6 - Close (M+G) (5 min)
 

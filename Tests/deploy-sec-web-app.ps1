@@ -2,10 +2,8 @@
 # az login --tenant 'b4fd7cff-510b-4da5-b133-f7aa6f692ee2'
 
 # Declare variables for all the resources that will be deployed with Azure CLI using powershell
-$resourceGroupName = "github-copilot-web-apps" ### (Fail back demo)
-$demoNumber = "13577" ### (Fail back demo)
-#$resourceGroupName = "github-copilot-web-apps-demo"
-#$demoNumber = "23577"
+$resourceGroupName = "github-copilot-web-apps"
+$demoNumber = "13577"
 $location = "uksouth"
 $jsonContainerName = "webapp-resources-json"
 $storageAccountName = "webappdemo$demoNumber"

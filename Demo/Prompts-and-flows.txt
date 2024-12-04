@@ -44,6 +44,7 @@
 Additional Notes:
 Ensure all commands are idempotent (can run multiple times without causing errors).
 Include comments to explain each step of the script."
+Ask copilot to compare the script with teh actual deployment script and provide feedback on the script differences.
 
 # 2 - Deployment of secure web app (M) kick off... 1 min
 

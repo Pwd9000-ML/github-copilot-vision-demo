@@ -2,8 +2,12 @@
 
 # 1 - Create secured web app in Azure + Identity + Access to SQL via Managed Identity (M) 7 min
 
-@azure wire an Az CLI script to create a web app in Azure with a Managed Identity and access to an Azure SQL Server. The web app should be hosted in a Resource Group named "github-copilot-web-apps". The SQL Server should be hosted in the same Resource Group. The script should also assign the web app's Managed Identity as an AAD/ENTRAID Admin for the SQL Server. I want the script to do these things:
-"Write a PowerShell script to automate the deployment of a web app in Azure using Azure CLI. The script should:
+@azure write an Az CLI script to create a web app in Azure with a Managed Identity and access to an Azure SQL Server.
+The web app should be hosted in a Resource Group named "github-copilot-web-apps-demo". 
+The SQL Server should be hosted in the same Resource Group. 
+The script should also assign the web app's Managed Identity as an AAD/ENTRAID Admin for the SQL Server.
+I want the script to do these things:
+
 - Log in to Azure: Include a placeholder for the login command (comment it out for now).
 - Declare Variables: Create variables for the following resource configurations:
     ResourceGroupName: "github-copilot-web-apps-demo"
@@ -15,12 +19,12 @@
     WebAppName: "pwd900webappdemo23577"
     SqlServerName: "webappdemosqlserver23577"
     SqlDatabaseName: "webappdemo-db23577"
-- Create the Azure Resources as pr the variables using Azure CLI commands:
+- Create the Azure Resources as per the variables using Azure CLI commands:
     Create a Resource Group in the specified location.
     Create a Blob Storage Account in the Resource Group.
     Retrieve the storage account key and use it to create a blob container named "webapp-resources-json".
 -Deploy an App Service Plan and Web App:
-    Create an App Service Plan named AppServicePlanName.
+    Create an App Service Plan using the variable AppServicePlanName.
 -Deploy a Web App with the following:
     Runtime: "NODE:20-lts"
     Plan: AppServicePlanName
@@ -36,7 +40,9 @@
     Enable build during deployment
 Additional Notes:
 Ensure all commands are idempotent (can run multiple times without causing errors).
-Include comments to explain each step of the script."
+Include comments to explain each step of the script.
+"
+
 Ask copilot to compare the script with teh actual deployment script and provide feedback on the script differences.
 
 # 2 - Deployment of secure web app (M) kick off... 1 min

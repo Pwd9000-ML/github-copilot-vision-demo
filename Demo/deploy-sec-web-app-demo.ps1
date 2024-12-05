@@ -1,5 +1,5 @@
 # Log in to Azure
-# az login --tenant 'b4fd7cff-510b-4da5-b133-f7aa6f692ee2'
+az login --tenant 'b4fd7cff-510b-4da5-b133-f7aa6f692ee2'
 
 # Declare variables for all the resources that will be deployed with Azure CLI using powershell
 $resourceGroupName = "github-copilot-web-apps-demo"

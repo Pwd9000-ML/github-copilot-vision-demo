@@ -1,4 +1,3 @@
-
 architecture-beta
     group api(cloud)[API]
     service master(databases)[databases] in api

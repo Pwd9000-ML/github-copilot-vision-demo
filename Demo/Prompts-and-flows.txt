@@ -1,13 +1,12 @@
-# 0 - Introduction (M+G) 5 min
 
-# 1 - Create secured web app in Azure + Identity + Access to SQL via Managed Identity (M) 7 min
+# 1 - Create secured web app in Azure + Identity + Access to SQL via Managed Identity
 
-@azure write an Az CLI script to create a web app in Azure with a Managed Identity and access to an Azure SQL Server.
+"
+Write an Az CLI script to create a web app in Azure with a Managed Identity and access to an Azure SQL Server.
 The web app should be hosted in a Resource Group named "github-copilot-web-apps-demo". 
 The SQL Server should be hosted in the same Resource Group. 
 The script should also assign the web app's Managed Identity as an AAD/ENTRAID Admin for the SQL Server.
 I want the script to do these things:
-
 - Log in to Azure: Include a placeholder for the login command (comment it out for now).
 - Declare Variables: Create variables for the following resource configurations:
     ResourceGroupName: "github-copilot-web-apps-demo"

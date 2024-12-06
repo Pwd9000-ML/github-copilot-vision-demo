@@ -23,4 +23,3 @@
 ## webappdemosqlserver13577
 - **ID**: /subscriptions/829efd7e-aa80-4c0d-9c1c-7aa2557f8e07/resourceGroups/github-copilot-web-apps/providers/Microsoft.Sql/servers/webappdemosqlserver13577
 - **Type**: Microsoft.Sql/servers
-

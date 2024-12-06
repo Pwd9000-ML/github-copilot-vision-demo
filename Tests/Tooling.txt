@@ -1,0 +1,14 @@
+Tooling:
+- VSCode
+- AZ CLI (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) 
+- Python 3.12.6 (https://www.python.org/downloads/release/python-3126/)
+- VSCode Extensions:
+    - GitHub Copilot + Chat 
+    - Azure Account
+    - GitHub Copilot for Azure
+    - Jupyter/Python
+    - Azure CLI Tools
+    - vscode-mermAId
+
+* Configure extensions
+* Log in tenant and subscription
